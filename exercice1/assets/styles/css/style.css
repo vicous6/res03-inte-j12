@@ -1,0 +1,264 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+body > header {
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  height: 12vh;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  box-shadow: 0px 5px 5px 0 rgba(48, 68, 78, 0.1);
+}
+body > header > h1 {
+  font-weight: bold;
+  align-self: center;
+  justify-self: center;
+  font-size: 40px;
+}
+body > header > nav:nth-of-type(1) > ul {
+  height: 100%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+body > header > nav:nth-of-type(1) > ul > li {
+  font-weight: bold;
+  align-self: center;
+  justify-self: center;
+}
+body > header > nav:nth-of-type(2) > h2 {
+  display: none;
+}
+body > header > nav:nth-of-type(2) > ul {
+  height: 100%;
+  width: 80%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+}
+body > header > nav:nth-of-type(2) > ul > li {
+  align-self: center;
+  margin: auto;
+}
+body > header > nav:nth-of-type(2) > ul > li > i {
+  font-size: 24px;
+}
+body > header > nav:nth-of-type(2) > ul > li:nth-of-type(1) > i:nth-of-type(1) {
+  border-right: 1px solid black;
+}
+body > div {
+  height: 25vh;
+  width: 100%;
+}
+body > main {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+body > main > section:nth-of-type(1) {
+  height: 120vh;
+}
+body > main > section:nth-of-type(1) > article {
+  display: grid;
+  grid-template-row: 4fr 0.5fr 0.5fr 0.5fr 1fr;
+  width: 100%;
+  height: 80%;
+}
+body > main > section:nth-of-type(1) > article > figure {
+  width: 100%;
+  height: 60vh;
+  justify-self: center;
+  background: url(https://avitex.vn/theme/gute/assets/images/posts/1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body > main > section:nth-of-type(1) > article > title {
+  font-size: 20px;
+  justify-self: center;
+}
+body > main > section:nth-of-type(1) > article > h2 {
+  height: 4vh;
+  font-size: 20px;
+  justify-self: center;
+}
+body > main > section:nth-of-type(1) > article > h3 {
+  height: 4vh;
+  font-size: 30px;
+  justify-self: center;
+}
+body > main > section:nth-of-type(1) > article > ul {
+  display: flex;
+}
+body > main > section:nth-of-type(1) > article > ul > li {
+  width: 33%;
+}
+body > main > section:nth-of-type(1) > article > a {
+  text-align: center;
+  font-size: 0.9375em;
+  font-weight: 700;
+}
+body > main > aside {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+body > main > aside > h5 {
+  width: 80%;
+  margin: auto;
+  padding-top: 5vh;
+  font-size: 1.125em;
+  font-weight: 700;
+}
+body > main > aside > ul > li {
+  color: white;
+  width: 80%;
+  display: flex;
+  height: 10vh;
+  margin: auto;
+  margin-top: 4vh;
+  background: url(https://avitex.vn/theme/gute/assets/images/backgrounds/category-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-around;
+}
+body > main > aside > ul > li > h5:nth-of-type(1) {
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+}
+body > main > aside > ul > li > h5:nth-of-type(2) {
+  margin-left: 7vw;
+  height: 2.5em;
+  width: 2.5em;
+  background-color: #ebebeb;
+  text-align: center;
+  line-height: 2.5em;
+  border-radius: 999px;
+  color: #111;
+}
+body > main > aside > article {
+  height: 15vh;
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 0.2fr 2fr;
+  padding-top: 5vh;
+}
+body > main > aside > article > figure {
+  grid-row: 1/4;
+  background: url(https://avitex.vn/theme/gute/assets/images/backgrounds/trending-post-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body > main > aside > article > h6 {
+  font-size: 0.75em;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+body > main > aside > article > p {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  font-size: 1em;
+}
+body > main > aside > article > footer {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  display: flex;
+  color: #888;
+  font-size: 0.8125em;
+  font-weight: 400;
+}
+body > main > aside > form {
+  margin: auto;
+  margin-top: 8vh;
+  height: 30vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  background-color: #f5f5f5;
+  padding: 2.5em;
+}
+body > main > aside > form > h5 {
+  width: 100%;
+  margin: auto;
+  font-size: 1.125em;
+  font-weight: 700;
+}
+body > main > aside > form > p {
+  width: 100%;
+  margin: auto;
+}
+body > main > aside > form > input {
+  height: auto;
+  padding: 0.9375em 1.25em;
+  align-self: center;
+}
+body > main > aside > form > button {
+  width: 100%;
+  margin: auto;
+  height: 80%;
+  color: #fff;
+  font-size: 0.875em;
+  font-weight: 700;
+  background-color: #e49c86;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
